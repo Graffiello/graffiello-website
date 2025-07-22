@@ -1,0 +1,143 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.shop-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 0;
+}
+
+.shop-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.shop-nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.shop-nav a.active {
+  color: #0070f3;
+}
+
+.shop-nav button {
+  background: none;
+  border: none;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.product-section {
+  padding: 2rem 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  color: #0070f3;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shop-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .shop-nav {
+    margin-top: 0.5rem;
+  }
+
+  .shop-nav a,
+  .shop-nav button {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
